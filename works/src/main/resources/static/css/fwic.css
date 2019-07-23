@@ -1,0 +1,68 @@
+#fwic_Img_box {
+    margin-top: 55px;
+}
+
+#fwic_Image_2 {
+    width: 50%;
+    height: 50%;
+}
+
+@media screen and (min-width: 1000px) {
+
+    /*#full_back {
+        width:100%;
+        height:100%;
+        position: relative;
+        background: rgb(255, 251, 240, 0.5);
+        !*padding:1px;
+        box-sizing:border-box;*!
+        z-index:1;
+    }
+
+    #full_back:after {
+        content: '';
+        width:100%;
+        height:100%;
+        position: absolute;
+        left:0;
+        top:0;
+        background: inherit;
+        z-index: 2;
+    }
+
+    #fwic_1 {
+        position: absolute;
+        z-index:11;
+    }*/
+
+    /*#fwic_1:hover {
+        position: relative;
+        z-index: 333;
+        transform: scale(1.002);
+        transform-origin: center center;
+    }
+
+    #fwic_2:hover {
+        position: relative;
+        z-index: 333;
+        transform: scale(1.002);
+        transform-origin: center center;
+    }
+
+    #fwic_3:hover {
+        position: relative;
+        z-index: 333;
+        transform: scale(1.002);
+        transform-origin: center center;
+    }
+
+    #fwic_4:hover {
+        position: relative;
+        z-index: 333;
+        transform: scale(1.002);
+        transform-origin: center center;
+    }*/
+
+}
+
+

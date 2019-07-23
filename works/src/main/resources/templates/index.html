@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MAIZHOU</title>
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" type="text/css">
+    <link th:href="@{/css/index.css}" rel="stylesheet" type="text/css"/>
+    <link th:href="@{/css/navigation.css}" rel="stylesheet" type="text/css">
+    <link th:href="@{/fonts/glyphicons-halflings-regular.woff2}">
+    <script type="text/javascript" th:src="@{/js/jquery-3.4.1.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bigger_smaller.js}"></script>
+</head>
+    <body>
+        <div class="container">
+
+            <div class="row">
+                <div id="navigation" class="col-md-3">
+                    <table>
+                        <tr>
+                            <th>
+                                <h3 id="h3_maizhou">
+                                    <a id="a_home" th:href="@{/maizhou/index}">MaiZhou Yuan</a>
+                                </h3>
+                            </th>
+                            <th>
+                                <label id="nav_toggle_0" for="menu_checkbox_0" class="index_a">Menu</label>
+                            </th>
+                        </tr>
+                    </table>
+
+                    <input id="menu_checkbox_0" type="checkbox">
+
+                    <ul id="index_ul" class="index_subul">
+
+                        <label id="nav_toggle_1" for="menu_checkbox_1" class="index_a">Ongoing Projects</label>
+                        <input id="menu_checkbox_1" type="checkbox">
+                        <li class="index_subli_1"><a class="index_suba_1" th:href="@{/maizhou/fromWhereICome}">From Where I Come</a></li>
+                        <li class="index_subli_1"><a class="index_suba_1" th:href="@{/maizhou/plasticContemporary}">Plastic Contemporary</a></li>
+
+                        <label id="nav_toggle_2" for="menu_checkbox_2" class="index_a">Projects</label>
+                        <input id="menu_checkbox_2" type="checkbox">
+                        <li class="index_subli_2"><a class="index_suba_1" href="">Jiaqi</a></li>
+
+                        <li class="index_li"><a class="index_a" href="">CV/Bio</a></li>
+                        <li class="index_li"><a class="index_a" href="">Contact</a></li>
+
+                        <li id="index_ins" class="index_li"><a class="index_ins" href=""><img id="indexImage_ins" class="img-responsive" th:src="@{/images/ins.png}" alt="..."></a></li>
+
+                    </ul>
+                </div>
+
+                <div id="forTheMargin" class="col-md-3"></div>
+
+                <div id="indexImg_box" class="col-md-7">
+                    <div id="my-gallery-container">
+                        <div class="item" data-order="8">
+                            <!--<a id="123i" href="#">-->
+                            <img id="indexImage" class="img-responsive" onclick="bigger_smaller();" th:src="@{/images/xianyuan/xianyuan_1.jpg}" alt="...">
+                            <!--</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>

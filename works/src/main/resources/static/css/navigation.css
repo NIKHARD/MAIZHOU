@@ -1,0 +1,198 @@
+
+/*body {
+    background-color: navajowhite;
+}*/
+
+#h3_maizhou {
+    margin-top: 55px;
+    margin-right: auto;
+    margin-bottom: 30px;
+    width: 168px;
+    font-size: 23px;
+    font-weight: normal;
+    color: #2b542c;
+    font-family: "Wire One","Helvetica",arial,sans-serif;
+    font-weight: normal;
+    line-height: 1em;
+    letter-spacing: 0px;
+    font-family: futura-pt;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.2em;
+    text-transform: none;
+    letter-spacing: .01em;
+}
+
+#nav_toggle_0 {
+    margin-top: 46px;
+    margin-left: 70px;
+}
+
+#index_ul {
+    margin: 0;
+    padding: 0;
+}
+
+.index_li {
+    list-style-type: none;
+    margin-left: 0;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.index_a {
+    text-decoration: none;
+    color: #2b542c;
+    font-family: "Helvetica",arial,sans-serif;
+    font-weight: bold;
+    letter-spacing: 0px;
+    line-height: 1.5em;
+    font-family: "proxima-nova";
+    line-height: 1.6em;
+    text-transform: none;
+    letter-spacing: 0em;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    display: block;
+    padding: .2em;
+}
+
+.index_suba_1 {
+    text-decoration: none;
+    color: darkcyan;
+    font-family: "Helvetica",arial,sans-serif;
+    font-weight: bold;
+    letter-spacing: 0px;
+    line-height: 1.5em;
+    font-family: "proxima-nova";
+    line-height: 1.6em;
+    text-transform: none;
+    letter-spacing: 0em;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    display: block;
+    padding: .2em;
+}
+
+#a_home {
+    color: #255625;
+}
+#a_home:hover {
+    text-decoration: none;
+}
+
+.index_suba_1:hover {
+    text-decoration: none;
+}
+
+.index_a:hover {
+    text-decoration: none;
+    color: darkcyan;
+}
+
+#indexImage_ins {
+    max-width: 10%;
+    max-height: 10%;
+}
+
+#index_ins {
+    margin-top: 100px;
+    margin-left: 5px;
+}
+
+/*nav*/
+
+#nav_toggle_0 {
+    display: none;
+    /*float: right;*/
+}
+
+#menu_checkbox_1:checked ~ .index_subli_1 {
+    display: block;
+
+}
+
+#menu_checkbox_2:checked ~ .index_subli_2 {
+    display: block;
+}
+
+.index_subli_1, .index_subli_2 {
+    list-style-type: none;
+    display: none;
+    margin-bottom: 15px;
+}
+
+#menu_checkbox_0, #menu_checkbox_1, #menu_checkbox_2 {
+    display: none;
+}
+
+#nav_toggle_0, #nav_toggle_1, #nav_toggle_2 {
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+#navigation {
+
+    position: fixed;
+}
+
+#trigger_nav, #nav_check_menu {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+
+    #nav_toggle_1, #nav_toggle_2 {
+        text-align: center;
+    }
+    .index_subli_1, .index_subli_2, .index_li {
+        text-align: center;
+    }
+
+    #nav_toggle_0 {
+        display: block;
+    }
+
+    #menu_checkbox_0:checked ~ .index_subul {
+        display: block;
+    }
+
+    #index_ul {
+        display: none;
+    }
+
+    #navigation {
+        position: relative;
+    }
+    #forTheMargin {
+        display: none;
+    }
+    #index_ins {
+        display: none;
+    }
+
+    #hidden_box {
+        display: none;
+    }
+
+    #trigger_nav {
+        display: block;
+    }
+
+    #nav_check_menu:checked ~ #hidden_box {
+        display: block;
+    }
+
+    
+}
+
+
+#indexImg_box {
+    margin-left: 45px;
+}
+
+
+
+

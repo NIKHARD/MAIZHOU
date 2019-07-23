@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MAIZHOU</title>
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" type="text/css">
+    <link th:href="@{/css/navigation.css}" rel="stylesheet" type="text/css">
+    <link th:href="@{/css/fwic.css}" rel="stylesheet" type="text/css">
+    <script type="text/javascript" th:src="@{/js/jquery-3.4.1.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/mp.mansory.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bigger_smaller.js}"></script>
+</head>
+<body>
+    <div id="full_back">
+        <div id="containerId" class="container">
+            <div class="row">
+                <div id="navigation" class="col-md-3">
+                    <table>
+                        <tr>
+                            <th>
+                                <h3 id="h3_maizhou">
+                                    <a id="a_home" th:href="@{/maizhou/index}">MaiZhou Yuan</a>
+                                </h3>
+                            </th>
+                            <th>
+                                <label id="nav_toggle_0" for="menu_checkbox_0" class="index_a">Menu</label>
+                            </th>
+                        </tr>
+                    </table>
+
+                    <input id="menu_checkbox_0" type="checkbox">
+
+                    <ul id="index_ul" class="index_subul">
+
+                        <label id="nav_toggle_1" for="menu_checkbox_1" class="index_a">Ongoing Projects</label>
+                        <input id="menu_checkbox_1" type="checkbox">
+                        <li class="index_subli_1"><a class="index_suba_1" th:href="@{/maizhou/fromWhereICome}">From Where I Come</a></li>
+                        <li class="index_subli_1"><a class="index_suba_1" th:href="@{/maizhou/plasticContemporary}">Plastic Contemporary</a></li>
+
+                        <label id="nav_toggle_2" for="menu_checkbox_2" class="index_a">Projects</label>
+                        <input id="menu_checkbox_2" type="checkbox">
+                        <li class="index_subli_2"><a class="index_suba_1" href="">Jiaqi</a></li>
+
+                        <li class="index_li"><a class="index_a" href="">CV/Bio</a></li>
+                        <li class="index_li"><a class="index_a" href="">Contact</a></li>
+
+                        <li id="index_ins" class="index_li"><a class="index_ins" href=""><img id="indexImage_ins" class="img-responsive" th:src="@{/images/ins.png}" alt="..."></a></li>
+
+                    </ul>
+                </div>
+
+                <div id="forTheMargin" class="col-md-3"></div>
+
+                <div id="fwic_Img_box" class="col-md-9">
+
+                    <div id="my-gallery-container">
+                        <div id="fwic_1" class="item" data-order="1" onclick="biggerSmaller(this.id, 'left', 'top');">
+                            <a id="box_anik1" href="javascript:void(0)" class="thumbnail">
+                                <img id="image_pig" class="img-responsive" th:src="@{/images/xianyuan/xianyuan_1.jpg}" alt="...">
+                                <p></p>
+                            </a>
+                        </div>
+                        <div id="fwic_2" class="item" data-order="2" onclick="biggerSmaller(this.id, 'right', 'top');">
+                            <a id="box_anik2" href="javascript:void(0)" class="thumbnail">
+                                <img class="img-responsive" th:src="@{/images/xianyuan/xianyuan_2.jpg}" alt="...">
+                            </a>
+                        </div>
+                        <div id="fwic_3" class="item" data-order="3" onclick="biggerSmaller(this.id, 'left', 'center');">
+                            <a id="box_anik3" href="javascript:void(0)" class="thumbnail">
+                                <img class="img-responsive" th:src="@{/images/xianyuan/xianyuan_3.jpg}" alt="...">
+                            </a>
+                        </div>
+                        <div id="fwic_4" class="item" data-order="4" onclick="biggerSmaller(this.id, 'right', 'center');">
+                            <a id="box_anik4" href="javascript:void(0)" class="thumbnail">
+                                <img class="img-responsive" th:src="@{/images/xianyuan/xianyuan_4.jpg}" alt="...">
+                            </a>
+                        </div>
+                        <div id="fwic_5" class="item" data-order="5" onclick="biggerSmaller(this.id, 'left', 'center');">
+                            <a id="box_anik5" href="javascript:void(0)" class="thumbnail">
+                                <img class="img-responsive" th:src="@{/images/xianyuan/xianyuan_5.jpg}" alt="...">
+                            </a>
+                        </div>
+                        <div id="fwic_6" class="item" data-order="6" onclick="biggerSmaller(this.id, 'right', 'center');">
+                            <a id="box_anik6" href="javascript:void(0)" class="thumbnail">
+                                <img class="img-responsive" th:src="@{/images/xianyuan/xianyuan_6.jpg}" alt="...">
+                            </a>
+                        </div>
+                        <div id="fwic_7" class="item" data-order="7" onclick="biggerSmaller(this.id, 'left', 'center');">
+                            <a id="box_anik7" href="javascript:void(0)" class="thumbnail">
+                                <img class="img-responsive" th:src="@{/images/xianyuan/xianyuan_7.jpg}" alt="...">
+                            </a>
+                        </div>
+                        <div id="fwic_8" class="item" data-order="8" onclick="biggerSmaller(this.id, 'right', 'center');">
+                            <a id="box_anik8" href="javascript:void(0)" class="thumbnail">
+                                <img class="img-responsive" th:src="@{/images/xianyuan/xianyuan_8.jpg}" alt="...">
+                            </a>
+                        </div>
+                        <div id="fwic_9" class="item" data-order="9" onclick="biggerSmaller(this.id, 'left', 'center');">
+                            <a id="box_anik9" href="javascript:void(0)" class="thumbnail">
+                                <img class="img-responsive" th:src="@{/images/xianyuan/xianyuan_9.jpg}" alt="...">
+                            </a>
+                        </div>
+                        <div id="fwic_10" class="item" data-order="10" onclick="biggerSmaller(this.id, 'right', 'center');">
+                            <a id="box_anik10" href="javascript:void(0)" class="thumbnail">
+                                <img class="img-responsive" th:src="@{/images/xianyuan/xianyuan_10.jpg}" alt="...">
+                            </a>
+                        </div>
+                        <div id="fwic_11" class="item" data-order="11" onclick="biggerSmaller(this.id, 'left', 'center');">
+                            <a id="box_anik11" href="javascript:void(0)" class="thumbnail">
+                                <img class="img-responsive" th:src="@{/images/xianyuan/xianyuan_11.jpg}" alt="...">
+                            </a>
+                        </div>
+                        <div id="fwic_12" class="item" data-order="12" onclick="biggerSmaller(this.id, 'right', 'center');">
+                            <a id="box_anik12" href="javascript:void(0)" class="thumbnail">
+                                <img class="img-responsive" th:src="@{/images/xianyuan/xianyuan_12.jpg}" alt="...">
+                            </a>
+                        </div>
+                        <div id="fwic_13" class="item" data-order="13" onclick="biggerSmaller(this.id, 'left', 'center');">
+                            <a id="box_anik13" href="javascript:void(0)" class="thumbnail">
+                                <img class="img-responsive" th:src="@{/images/xianyuan/xianyuan_13.jpg}" alt="...">
+                            </a>
+                        </div>
+                        <div id="fwic_14" class="item" data-order="14" onclick="biggerSmaller(this.id, 'right', 'center');">
+                            <a id="box_anik14" href="javascript:void(0)" class="thumbnail">
+                                <img class="img-responsive" th:src="@{/images/xianyuan/xianyuan_14.jpg}" alt="...">
+                            </a>
+                        </div>
+                        <div id="fwic_15" class="item" data-order="15" onclick="biggerSmaller(this.id, 'left', 'center');">
+                            <a id="box_anik15" href="javascript:void(0)" class="thumbnail">
+                                <img class="img-responsive" th:src="@{/images/xianyuan/xianyuan_15.jpg}" alt="...">
+                            </a>
+                        </div>
+                        <div id="fwic_16" class="item" data-order="16" onclick="biggerSmaller(this.id, 'right', 'center');">
+                            <a id="box_anik16" href="javascript:void(0)" class="thumbnail">
+                                <img class="img-responsive" th:src="@{/images/xianyuan/xianyuan_16.jpg}" alt="...">
+                            </a>
+                        </div>
+                        <div id="fwic_17" class="item" data-order="17" onclick="biggerSmaller(this.id, 'left', 'center');">
+                            <a id="box_anik17" href="javascript:void(0)" class="thumbnail">
+                                <img class="img-responsive" th:src="@{/images/xianyuan/xianyuan_17.jpg}" alt="...">
+                            </a>
+                        </div>
+                        <div id="fwic_18" class="item" data-order="18" onclick="biggerSmaller(this.id, 'right', 'center');">
+                            <a id="box_anik18" href="javascript:void(0)" class="thumbnail">
+                                <img class="img-responsive" th:src="@{/images/xianyuan/xianyuan_18.jpg}" alt="...">
+                            </a>
+                        </div>
+                        <div id="fwic_19" class="item" data-order="19" onclick="biggerSmaller(this.id, 'left', 'center');">
+                            <a id="box_anik19" href="javascript:void(0)" class="thumbnail">
+                                <img class="img-responsive" th:src="@{/images/xianyuan/xianyuan_19.jpg}" alt="...">
+                            </a>
+                        </div>
+                        <div id="fwic_20" class="item" data-order="20" onclick="biggerSmaller(this.id, 'right', 'center');">
+                            <a id="box_anik20" href="javascript:void(0)" class="thumbnail">
+                                <img class="img-responsive" th:src="@{/images/xianyuan/xianyuan_20.jpg}" alt="...">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+        jQuery(document).ready(function ( $ ) {
+            $("#my-gallery-container").mpmansory(
+                {
+                    childrenClass: 'item', // default is a div
+                    columnClasses: 'padding', //add classes to items
+                    breakpoints:{
+                        lg: 6,
+                        md: 4,
+                        sm: 6,
+                        xs: 12
+                    },
+                    distributeBy: { order: true, height: true, attr: 'data-order', attrOrder: 'asc' },
+                    onload: function (items) {
+                        //make somthing with items
+                    },
+                }
+            );
+        });
+
+
+    </script>
+
+</body>
+</html>
