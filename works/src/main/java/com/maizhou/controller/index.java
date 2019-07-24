@@ -37,4 +37,11 @@ public class index {
 
     }
 
+    @RequestMapping(value="/maizhou/cvBio")
+    public String cvBio() {
+
+        return "cvBio";
+
+    }
+
 }
